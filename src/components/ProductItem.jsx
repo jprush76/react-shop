@@ -4,10 +4,10 @@ import '@styles/ProductItem.scss';
 import addToCartBtn from '@icons/bt_add_to_cart.svg';
 
 const ProductItem = () => {
-    const [cart, setCart] = useState('');
+    const [cart, setCart] = useState([]);
 
     const handleClick = () => {
-        setCart('Hola mundo');
+        setCart([]);
     }
 
 	return (
@@ -21,7 +21,6 @@ const ProductItem = () => {
 				<figure onClick={handleClick}>
 					<img src={addToCartBtn} alt="" />
 				</figure>
-                {cart}
 			</div>
 		</div>
 	);
